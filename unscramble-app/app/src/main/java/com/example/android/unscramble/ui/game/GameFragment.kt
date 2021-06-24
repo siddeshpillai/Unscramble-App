@@ -66,11 +66,6 @@ class GameFragment : Fragment() {
         binding.skip.setOnClickListener { onSkipWord() }
     }
 
-    override fun onDetach() {
-        super.onDetach()
-        Log.d("GameFragment", "GameFragment destroyed!")
-    }
-
     /*
     * Checks the user's word, and updates the score accordingly.
     * Displays the next scrambled word.
